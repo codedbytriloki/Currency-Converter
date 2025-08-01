@@ -48,37 +48,5 @@ function convertCurrency() {
     result.textContent = 'Error fetching exchange rate.';
 })
 }
-// convertBtn.addEventListener("click", async () => {
-//   const amount = amountInput.value;
-//   const from = fromCurrency.value;
-//   const to = toCurrency.value;
 
-//   if (amount === "" || isNaN(amount)) {
-//     result.textContent = "Please enter a valid amount.";
-//     return;
-//   }
 
-//   const proxyUrl = "https://api.allorigins.win/get?url=";
-//   const targetUrl = `https://api.exchangerate.host/convert?from=${from}&to=${to}&amount=${amount}`;
-//   const fullUrl = `${proxyUrl}${encodeURIComponent(targetUrl)}`;
-
-//   try {
-//     const res = await fetch(fullUrl);
-//     const dataWrapped = await res.json();
-//     const data = JSON.parse(dataWrapped.contents);
-
-//     console.log("Real API Data:", data);
-
-//     if (!data.result) {
-//       result.textContent = "Conversion failed.";
-//       return;
-//     }
-
-//     result.textContent =` Converted Amount: ${data.result.toFixed(2)} ${to}`;
-//   } catch (err) {
-//     console.log(err);
-//     result.textContent = "Error fetching exchangevrate.";
-//   }
-// });
-
-// https://financialmodelingprep.com/api/v3/fx/${from}/${to}?apikey=${API_KEY}
